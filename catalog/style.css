@@ -17,7 +17,7 @@ nav {
 }
 
 .header__logo {
-    margin-left: 3rem;
+    margin-left: 1rem;
     align-self: center;
 }
 
@@ -58,7 +58,7 @@ nav {
 
 main {
     padding-top: 3.5rem;
-    border: 1px solid black;
+    border: 1px solid red;
     width: 90%;
     margin: 0 auto;
 }
@@ -69,7 +69,7 @@ main {
 }
 
 .main__head h1 {
-    margin-left: 3rem;
+    margin-left: 1rem;
     color: #1A212F;
     font-family: Rubik;
     font-style: normal;
@@ -102,7 +102,7 @@ main {
 }
 
 .sort-button__arrows_2:hover {
-    fill: green;
+    fill: #FF7236;
 }
 
 .open-button {
@@ -129,9 +129,173 @@ main {
 }
 
 .sort-button:hover {
+
     visibility: hidden;
 }
 
 .sort-button:hover+.open-button {
+
     display: block;
+}
+
+/* Фильтер */
+.main__main {
+    display: flex;
+}
+
+.main__filter {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 20%;
+    border: 1px solid green;
+}
+
+.main__filter h3 {
+    margin-top: 1rem;
+    color: #1A212F;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.filter__cash {
+    margin-top: 1rem;
+}
+
+.filter__cash input {
+    border: 1px solid #E1E1E1;
+    width: 100px;
+    height: 24px;
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.filter__tag1 {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.filter__tag1 p {
+    margin-left: 0.5rem;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.filter__tag1 input {
+    margin-left: 0.5rem;
+    border: 1px solid #E1E1E1;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.filter__button button {
+    margin-top: 0.5rem;
+    margin-left: 5%;
+    width: 185px;
+    height: 42px;
+    background: none;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.filter__button button:hover {
+    background-color: orange;
+}
+
+.filter__button p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+
+/* Карточки */
+.main__cards {
+    margin-left: 5.5rem;
+    margin-top: 2.5rem;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem 8rem;
+}
+
+.main__card1 {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.main__card1 h3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main__card1 i {
+    font-weight: 800;
+}
+
+.main__card1 p {
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.card1__icon {
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon1 {
+    margin-left: 0.5rem;
+}
+.icon2{
+    ma
+}
+
+.card1__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    width: 12rem;
+    height: 44px;
+    background-color: orangered;
+    border-radius: 50px;
+}
+
+.card1__button a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.button__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 2rem;
 }
